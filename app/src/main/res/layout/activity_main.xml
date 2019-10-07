@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/_137sdp"
+            android:layout_height="@dimen/_31sdp"
+           android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/logo"
+            android:layout_marginStart="@dimen/_20sdp" />
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/materialLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/ripplecolor"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false">
+
+
+        <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtStart"
+            android:text="GET STARTED"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:padding="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <LinearLayout
+            android:layout_above="@id/materialLayout"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                android:text="Fill your details to get started"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/background_card"
+                android:fontFamily="OpenSans-Semibold.ttf"
+                android:hint="Name"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+            <EditText
+                android:id="@+id/edNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:background="@drawable/background_card"
+                android:fontFamily="OpenSans-Semibold.ttf"
+                android:hint="Number"
+                 android:maxLength="10"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:background="@drawable/background_card"
+                android:fontFamily="OpenSans-Semibold.ttf"
+                android:hint="Date of Birth"
+                android:imeOptions="actionDone"
+                android:inputType="date"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:focusable="false"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

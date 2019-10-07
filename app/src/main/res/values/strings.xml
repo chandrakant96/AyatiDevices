@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AyatiDevices</string>
+    <string name="PleaseTryAgain">Please Try Again</string>
+    <string name="no_internet">Connection Error</string>
+
+    <string name="all"><u>All</u></string>
+    <string name="left"><u>Left</u></string>
+    <string name="right"><u>Right</u></string>
+</resources>

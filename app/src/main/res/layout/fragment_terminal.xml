@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".ReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/materialLayout"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/ripplecolor"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_ripplePersistent="false">
+
+
+                <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                    android:id="@+id/txtRecheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_card_one"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="RE - CHECK"
+                    android:textColor="@color/colorAccent" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/materialLayoutone"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/ripplecolor"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_ripplePersistent="false">
+
+                <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                    android:id="@+id/txtSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:text="SAVE"
+                    android:textColor="@color/white" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_above="@id/layoutbottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                android:text="TEST REPORT"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+</LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <com.example.ayatidevices.ViewPackage.OpenSansRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name - "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chandu"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.example.ayatidevices.ViewPackage.OpenSansRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leg Position - "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                    android:id="@+id/txtLeg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#F2F2F2"
+                app:cardCornerRadius="@dimen/_4sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                        android:id="@+id/txtPostion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position 3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgposition"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/leg_logo"></ImageView>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="VPT"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                                android:id="@+id/textView_vpt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="TPT"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                                android:id="@+id/textView_tpt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/graphCard"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#F2F2F2"
+                app:cardCornerRadius="@dimen/_4sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sensitivity Graph"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <lecho.lib.hellocharts.view.LineChartView
+                        android:id="@+id/lineChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/receive_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:gravity="bottom"
+            android:scrollbars="vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

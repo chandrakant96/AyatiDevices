@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="#F2F2F2"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_2sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgCertificate"
+                android:src="@drawable/certificate_icon"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/imgCertificate"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imgCertificate"
+                android:layout_marginStart="@dimen/_10sdp">
+
+                <com.example.ayatidevices.ViewPackage.OpenSansRegular
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Chandrakant walke"
+                    android:textColor="@color/black" />
+
+                <com.example.ayatidevices.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtDob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Date - 14/ 08/ 19"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:src="@drawable/share_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

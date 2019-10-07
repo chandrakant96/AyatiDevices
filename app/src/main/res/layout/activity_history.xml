@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+    <LinearLayout
+        android:background="#fbfafa"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/layoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp">
+
+            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:text="HISTORY"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                app:cardCornerRadius="@dimen/_4sdp"
+                android:layout_alignParentRight="true"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                android:layout_alignParentEnd="true">
+
+                <com.example.ayatidevices.ViewPackage.OpenSansSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter months"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/green"
+                    android:padding="@dimen/_5sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:drawableEnd="@drawable/ic_calendar" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+        <com.example.ayatidevices.ViewPackage.OpenSansRegular
+            android:text="Today"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listHistory"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.ayatidevices.ViewPackage.OpenSansRegular
+            android:text="Previous months"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutmain"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imglogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp" />
+
+        <ImageView
+            android:id="@+id/imglogoOne"
+            android:layout_toRightOf="@id/imglogo"
+            android:layout_toEndOf="@id/imglogo"
+            android:layout_width="@dimen/_137sdp"
+            android:layout_height="@dimen/_31sdp"
+            android:src="@drawable/logo"
+            android:scaleType="fitStart"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications_none_black_24dp"
+            android:background="@drawable/circle_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_below="@id/imglogoOne"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtName"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.example.ayatidevices.ViewPackage.OpenSansRegular
+                android:text="Lets get you checked"
+                android:textColor="#4a4a4a"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/layoytmain"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.ayatidevices.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtLeftLeg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/background_left"
+                    android:text="LEFT LEG"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_20sdp" />
+
+                <com.example.ayatidevices.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtRightLeg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_right"
+                    android:text="RIGHT LEG"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+            <com.example.ayatidevices.ViewPackage.OpenSansSemiBold
+                android:id="@+id/txtHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="VIEW HISTORY"
+                android:textAlignment="center"
+                android:background="@drawable/background_card_one"
+                android:textColor="@color/green"
+                />
+
+            <ImageView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/img"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

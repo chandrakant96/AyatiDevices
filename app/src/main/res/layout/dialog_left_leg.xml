@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutCancel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_leg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <com.example.ayatidevices.ViewPackage.OpenSansRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name - "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chandu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <com.example.ayatidevices.ViewPackage.OpenSansRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leg Position - "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtPostion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/whitegray" />
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:background="@color/white"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp" />
+
+        <com.example.ayatidevices.ViewPackage.OpenSansSemiBold
+            android:id="@+id/txtPotionString"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:text="position1"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.example.ayatidevices.ViewPackage.OpenSansSemiBold>
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/materialLayout"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/ripplecolor"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false">
+
+        <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card_one"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp"
+            android:text="VIEW REPORT"
+            android:textColor="@color/colorAccent" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/materialLayoutone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/ripplecolor"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false">
+
+
+        <com.example.ayatidevices.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp"
+            android:text="START TEST"
+            android:textColor="@color/white" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

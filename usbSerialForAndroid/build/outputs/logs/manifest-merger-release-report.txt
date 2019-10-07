@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:1-5:44
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:1-5:44
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:1-5:44
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:1-5:44
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:1-5:44
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:1-5:44
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:1-5:44
+	package
+		ADDED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:3:7-43
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:5:7-32
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml:4:7-30
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+uses-sdk
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+		ADDED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
+		INJECTED from E:\Ayati_devices\AyatiDevices\usbSerialForAndroid\src\main\AndroidManifest.xml
